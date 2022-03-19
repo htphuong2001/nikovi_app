@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nikovi_app/app/app_text_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,8 +27,11 @@ class TestPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade100,
-      body: const Center(
-        child: Text('Nikovi app'),
+      body: Center(
+        child: Text(
+          'Nikovi app',
+          style: AppTextStyle.textStyleHeading2(),
+        ),
       ),
     );
   }
